@@ -28,7 +28,7 @@ public class User
     public string Password { get; set; }
 
     [Column("is_admin")]
-    public bool IsAdmin { get; set; }
+    public bool IsAdmin { get; set; } = false;
 
 
     public User(string name, string email, string password, bool isAdmin)
@@ -36,7 +36,7 @@ public class User
         Name = name.ToLower().Trim(); ;
         Email = email.ToLower().Trim(); ;
         Password = password;
-        IsAdmin = isAdmin; 
+        IsAdmin = isAdmin;
     }
 
     public User()
