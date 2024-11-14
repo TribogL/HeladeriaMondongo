@@ -30,4 +30,13 @@ public class Icecream
     [Range(2500.00, 25000.00)]
     public required double Price { get; set; }
 
+    public Icecream(){}
+
+    public Icecream(int id, string name, string description)
+    {
+        Id = id;
+        Name = name.ToLower().Trim();
+        Description = description.ToLower().Trim();
+    }
+
 }
