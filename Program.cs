@@ -16,6 +16,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseWelcomePage(new WelcomePageOptions
+{
+    Path = "/"
+});
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
