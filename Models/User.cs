@@ -31,9 +31,10 @@ public class User
     public bool IsAdmin { get; set; } = false;
 
 
-    public User(string name, string email, string password, bool isAdmin)
+    public User(string name, string email, string lastName, string password, bool isAdmin)
     {
         Name = name.ToLower().Trim(); ;
+        LastName = lastName.ToLower().Trim(); ;
         Email = email.ToLower().Trim(); ;
         Password = password;
         IsAdmin = isAdmin;
